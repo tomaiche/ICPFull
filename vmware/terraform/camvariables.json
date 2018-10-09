@@ -1491,7 +1491,7 @@
     {
       "name": "nfs_server_vm_disk2_enable",
       "description": "Management Node Disk Size Disk 2 (GB)",
-      "default": "false",
+      "default": "true",
       "type": "string",
       "required": false,
       "secured": false,
@@ -1526,6 +1526,7 @@
       "name": "nfs_server_vm_disk2_size",
       "description": "NFS Server Node Disk Size Disk 2 (GB)",
       "type": "string",
+      "default": "200",
       "required": false,
       "secured": false,
       "label": "NFS Server Node Disk Size (GB) - Disk 2 (NFS Size)",
