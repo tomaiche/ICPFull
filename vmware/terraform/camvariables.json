@@ -548,7 +548,7 @@
     {
       "name": "manage_hostname_ip",
       "default": {
-        "icpfulmg": "10.7.24.168"
+        "icpfulmg168": "10.7.24.168"
       },
       "description": "Management Node Hostname and IP Address",
       "type": "map",
