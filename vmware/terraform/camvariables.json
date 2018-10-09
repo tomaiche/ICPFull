@@ -393,7 +393,7 @@
       "name": "cluster_vip",
       "description": "IBM Cloud Private Cluster Virtual IP Address",
       "type": "string",
-      "default": "10.7.24.165"
+      "default": "10.7.24.165",
       "required": true,
       "secured": false,
       "label": "IBM Cloud Private Cluster VIP",
@@ -405,7 +405,7 @@
       "name": "cluster_vip_iface",
       "description": "IBM Cloud Private Network Interface eg. ens160",
       "type": "string",
-      "default": "ens192"
+      "default": "ens192",
       "required": true,
       "secured": false,
       "label": "IBM Cloud Private Cluster Network Interface eg. ens160",
@@ -417,7 +417,7 @@
       "name": "proxy_vip",
       "description": "IBM Cloud Private Proxy Virtual IP Address",
       "type": "string",
-      "default": "10.7.24.166"
+      "default": "10.7.24.166",
       "required": true,
       "secured": false,
       "label": "IBM Cloud Private Proxy VIP",
@@ -429,7 +429,7 @@
       "name": "proxy_vip_iface",
       "description": "IBM Cloud Private Proxy Network Interface eg. ens160",
       "type": "string",
-      "default": "ens192"
+      "default": "ens192",
       "required": true,
       "secured": false,
       "label": "IBM Cloud Private Proxy Network Interface eg. ens160",
