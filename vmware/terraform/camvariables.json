@@ -155,7 +155,7 @@
     {
       "name": "boot_memory",
       "description": "Boot Node Node Memory Allocation (mb)",
-      "default": "4096",
+      "default": "8192",
       "type": "string",
       "required": true,
       "secured": false,
@@ -167,7 +167,7 @@
     {
       "name": "boot_vcpu",
       "description": "Boot Node vCPU Allocation",
-      "default": "1",
+      "default": "4",
       "type": "string",
       "required": true,
       "secured": false,
@@ -574,7 +574,7 @@
     {
       "name": "manage_vcpu",
       "description": "Management Node vCPU Allocation",
-      "default": "4",
+      "default": "8",
       "type": "string",
       "required": false,
       "secured": false,
@@ -845,7 +845,7 @@
     {
       "name": "proxy_memory",
       "description": "Proxy Node Node Memory Allocation (mb)",
-      "default": "4096",
+      "default": "8192",
       "type": "string",
       "required": true,
       "secured": false,
@@ -857,7 +857,7 @@
     {
       "name": "proxy_vcpu",
       "description": "Proxy Node vCPU Allocation",
-      "default": "2",
+      "default": "4",
       "type": "string",
       "required": true,
       "secured": false,
@@ -980,7 +980,7 @@
     {
       "name": "worker_memory",
       "description": "Worker Node Node Memory Allocation (mb)",
-      "default": "4096",
+      "default": "8192",
       "type": "string",
       "required": true,
       "secured": false,
@@ -992,7 +992,7 @@
     {
       "name": "worker_vcpu",
       "description": "Worker Node vCPU Allocation",
-      "default": "2",
+      "default": "4",
       "type": "string",
       "required": true,
       "secured": false,
