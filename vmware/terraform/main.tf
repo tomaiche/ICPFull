@@ -145,7 +145,7 @@ module "deployVM_manage" {
 
   # count                 = "${length(var.master_vm_ipv4_address)}"
   # count = "${length(keys(var.manage_hostname_ip))}"
-  count = "${var.enable_vm_management == true ? "${length(keys(var.manage_hostname_ip))}" : "0}"
+  count = "${var.enable_vm_management == "true" ? ${length(keys(var.manage_hostname_ip))} : 0}"
 
   #######
   // vm_folder = "${module.createFolder.folderPath}"
