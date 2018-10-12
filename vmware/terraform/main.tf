@@ -296,8 +296,8 @@ module "deployVM_VA_Server" {
   vsphere_resource_pool = "${var.vsphere_resource_pool}"
 
   # count                 = "${length(var.va_vm_ipv4_address)}"
-  count = "${length(keys(var.va_hostname_ip))}"
-  # count = "${var.enable_vm_va == "true" ? ${length(keys(var.va_hostname_ip))} : 0}"
+  # count = "${length(keys(var.va_hostname_ip))}"
+  count = ${var.enable_vm_va == "true" ? ${length(keys(var.va_hostname_ip))} : 0}
 
 
   #######
@@ -537,6 +537,7 @@ module "icp_config_yaml" {
   vm_ipv4_address_list   = "${values(var.boot_hostname_ip)}"
   enable_kibana          = "${lower(var.enable_kibana)}"
   enable_metering        = "${lower(var.enable_metering)}"
+  enable_vm_va           = "${lower(var.enable_vm_va)}"
   cluster_vip            = "${var.cluster_vip}"
   cluster_vip_iface      = "${var.cluster_vip_iface}"
   proxy_vip              = "${var.proxy_vip}"
