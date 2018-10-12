@@ -144,8 +144,8 @@ module "deployVM_manage" {
   vsphere_resource_pool = "${var.vsphere_resource_pool}"
 
   # count                 = "${length(var.master_vm_ipv4_address)}"
-  # count = "${length(keys(var.manage_hostname_ip))}"
-  count = "${var.enable_vm_management == "true" ? ${length(keys(var.manage_hostname_ip))} : 0}"
+  count = "${length(keys(var.manage_hostname_ip))}"
+  # count = "${var.enable_vm_management == "true" ? ${length(keys(var.manage_hostname_ip))} : 0}"
 
   #######
   // vm_folder = "${module.createFolder.folderPath}"
@@ -296,8 +296,8 @@ module "deployVM_VA_Server" {
   vsphere_resource_pool = "${var.vsphere_resource_pool}"
 
   # count                 = "${length(var.va_vm_ipv4_address)}"
-  # count = "${length(keys(var.va_hostname_ip))}"
-  count = "${var.enable_vm_va == "true" ? ${length(keys(var.va_hostname_ip))} : 0}"
+  count = "${length(keys(var.va_hostname_ip))}"
+  # count = "${var.enable_vm_va == "true" ? ${length(keys(var.va_hostname_ip))} : 0}"
 
 
   #######
@@ -348,8 +348,8 @@ module "deployVM_NFS_Server" {
   vsphere_resource_pool = "${var.vsphere_resource_pool}"
 
   # count                 = "${length(var.nfs_server_vm_ipv4_address)}"
-  # count = "${length(keys(var.nfs_server_hostname_ip))}"
-  count = "${var.enable_nfs == "true" ? ${length(keys(var.nfs_server_hostname_ip))} : 0}"
+  count = "${length(keys(var.nfs_server_hostname_ip))}"
+  # count = "${var.enable_nfs == "true" ? ${length(keys(var.nfs_server_hostname_ip))} : 0}"
 
   // vm_folder = "${module.createFolder.folderPath}"
 
