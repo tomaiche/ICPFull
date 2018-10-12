@@ -296,8 +296,8 @@ module "deployVM_VA_Server" {
   vsphere_resource_pool = "${var.vsphere_resource_pool}"
 
   # count                 = "${length(var.va_vm_ipv4_address)}"
-  # count = "${length(keys(var.va_hostname_ip))}"
-  count = "${var.enable_vm_va == true ? ${length(keys(var.va_hostname_ip))} : 0}"
+  count = "${length(keys(var.va_hostname_ip))}"
+  # count = "${var.enable_vm_va == "true" ? ${length(keys(var.va_hostname_ip))} : 0}"
 
 
   #######
